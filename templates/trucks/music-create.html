@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Create New Music{% endblock %}
+
+{% block content %}
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" required>
+    </div>
+    <div class="form-group">
+        <label for="artist">Artist</label>
+        <input type="text" id="artist" name="artist" required>
+    </div>
+    <div class="form-group">
+        <label for="album">Album</label>
+        <input type="text" id="album" name="album">
+    </div>
+    <div class="form-group">
+        <label for="genre">Genre</label>
+        <input type="text" id="genre" name="genre">
+    </div>
+    <div class="form-group">
+        <label for="release-date">Release Date</label>
+        <input type="date" id="release-date" name="release-date">
+    </div>
+    <div class="form-group">
+        <label for="cover-image">Cover Image</label>
+        <input type="file" id="cover-image" name="cover-image" accept="image/*">
+    </div>
+    <div class="form-group">
+        <label for="audio-file">Audio File</label>
+        <input type="file" id="audio-file" name="audio-file" accept="audio/*" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Create Music</button>
+{% endblock %}

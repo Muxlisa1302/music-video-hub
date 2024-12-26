@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Delete Music Confirmation{% endblock %}
+
+{% block content %}
+    <div class="music-info">
+        <img src="https://via.placeholder.com/150x150" alt="Album Cover" class="album-cover">
+        <div class="music-details">
+            <h3>Awesome Song</h3>
+            <p>by Amazing Artist</p>
+            <p>Album: Incredible Sounds</p>
+        </div>
+    </div>
+    <p class="warning">This action cannot be undone.</p>
+    <div class="action-buttons">
+        <a href="music-list.html" class="btn btn-secondary">Cancel</a>
+        <form action="#" method="POST" style="display: inline;">
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+    </div>
+{% endblock %}
